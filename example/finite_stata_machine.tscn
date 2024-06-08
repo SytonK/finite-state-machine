@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtotrmfxmsdpm"]
+
+[ext_resource type="Script" path="res://finite state machine/finite_state_machine.gd" id="1_r345e"]
+[ext_resource type="Script" path="res://states/state0.gd" id="2_u4gng"]
+[ext_resource type="Script" path="res://states/state1.gd" id="3_tnb1g"]
+
+[node name="FiniteStataMachine" type="Node" node_paths=PackedStringArray("initial_state")]
+script = ExtResource("1_r345e")
+initial_state = NodePath("State0")
+
+[node name="State0" type="Node" parent="."]
+script = ExtResource("2_u4gng")
+
+[node name="State1" type="Node" parent="."]
+script = ExtResource("3_tnb1g")
