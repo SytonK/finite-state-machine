@@ -5,17 +5,17 @@ extends Node
 signal transition(new_state_name)
 
 
-func enter():
+func enter() -> void:
 	pass
 
-func exit():
+func exit() -> void:
 	pass
 
-func process(_delta: float):
+func process(_delta: float) -> void:
 	pass
 
-func physics_process(_delta: float):
+func physics_process(_delta: float) -> void:
 	pass
 
-func input(_event):
+func input(_event: InputEvent) -> void:
 	pass
